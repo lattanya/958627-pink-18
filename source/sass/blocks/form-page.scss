@@ -1,0 +1,193 @@
+.form-page__wrapper {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.form-page__text {
+  width: 280px;
+  margin: 53px auto;
+  text-align: center;
+  order: -1;
+}
+
+.form-page__list {
+  list-style: none;
+  margin: 0;
+}
+
+.form-page__item {
+  padding-bottom: 60px;
+}
+
+.form-page__personal-data {
+  margin: 0;
+  padding: 0;
+  border: none;
+  order: 0;
+}
+
+.form-page__contact-data {
+  padding-top: 35px;
+  padding-bottom: 18px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  border: none;
+  order: 2;
+}
+
+.form-page__checkbox {
+  background-color: $white-two;
+  border: none;
+  order: 1;
+}
+
+.form-page__fieldset-checkbox {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-page__radio {
+  background-color: $white-two;
+  order: 3;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-page__radio-app {
+  margin: 0;
+  padding: 0;
+}
+
+.form-page__feedback {
+  margin: 0;
+  padding: 0;
+  order: 4;
+  border: none;
+}
+
+.form-page__wrapper-button {
+  display: block;
+  order: 5;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-page__button {
+  background-color: $jade-green;
+  border: none;
+  width: 280px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.form-page__comment {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.form-page__simbol {
+  color: $lipstick;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__text {
+    width: 490px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .form-page__radio {
+    border: 1px solid $white-two;
+    background-color: $white;
+    order: 1;
+  }
+
+  .form-page__checkbox {
+    background-color: $white;
+    order: 3;
+  }
+
+  .form-page__fieldset-checkbox {
+    border: 2px solid $white-two;
+    background-color: $white;
+    order: 3;
+  }
+
+  .form-page__contact-data {
+    margin-bottom: 48px;
+    border: 2px solid $white-two;
+    order: 2;
+  }
+
+  .form-page__feedback {
+    border: 2px solid $white-two;
+  }
+
+  .form-page__wrapper-button {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    order: 5;
+  }
+
+  .form-page__button {
+    margin: 0;
+  }
+
+  .form-page__comment {
+    display: block;
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-page__text {
+    width: 715px;
+  }
+
+  .form-page__radio {
+    width: 50%;
+    border: none;
+  }
+
+  .form-page__personal-data {
+    width: 50%;
+  }
+
+  .form-page__contact-data {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .form-page__feedback {
+    margin-bottom: 68px;
+    width: 100%;
+  }
+
+  .form-page__comment {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

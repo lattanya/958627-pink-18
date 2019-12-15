@@ -1,0 +1,53 @@
+.contest {
+  background-color: $white;
+  margin: 0 auto;
+}
+
+.contest__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $white;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  width: 230px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.contest__image {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: $black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 170px;
+}
+
+@media (min-width: $tablet-width) {
+  .contest__text {
+    font-size: 50px;
+    line-height: 1;
+    width: 475px;
+    padding-top: 80px;
+  }
+
+  .contest__image {
+    min-height: 330px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest__text {
+    font-size: 50px;
+    line-height: 1;
+    width: 747px;
+    padding-top: 75px;
+  }
+
+  .contest__image {
+    min-height: 285px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+}
