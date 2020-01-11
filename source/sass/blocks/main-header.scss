@@ -1,6 +1,5 @@
 .main-header {
   width: 100%;
-  background-color: $dark-two-03;
 
   &--opend {
     position: static;
@@ -11,12 +10,10 @@
     top: 0;
     left: 0;
     z-index: 1;
-  }
-}
 
-.main-header--closed {
-  .main-nav {
-    display: none;
+    .main-nav {
+      display: none;
+    }
   }
 }
 
@@ -27,10 +24,10 @@
   display: block;
   width: 50px;
   height: 25px;
-  background-color: $dark-two;
   background-color: transparent;
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 .main-header--closed .main-header__toggle::before {
@@ -55,6 +52,18 @@
   box-shadow: 0 8px 0 0 $lipstick-03, 0 16px 0 0 $lipstick-03;
 }
 
+// .main-header--closed {
+//   .main-header__toggle {
+//     display: none;
+//   }
+// }
+
+// .main-header--nojs {
+//   .main-header__toggle {
+//     display: none;
+//   }
+// }
+
 .main-header--opened .main-header__toggle {
   top: 0;
   right: 0;
@@ -64,8 +73,12 @@
   &::after {
     content: "";
 
-    width: 36px;
-    height: 2px;
+    position: absolute;
+    top: 32px;
+    right: 30px;
+
+    width: 30px;
+    height: 5px;
     background-color: #ffffff;
   }
 
@@ -82,17 +95,32 @@
   &:active::after {
     background-color: rgba(255, 255, 255, 0.3);
   }
+  
+}
+
+.main-header--opened .main-header__toggle:hover::before {
+  background-color: $lipstick;
+}
+
+.main-header--opened .main-header__toggle:hover::after {
+  background-color: $lipstick;
+}
+
+.main-header--opened .main-header__toggle:active::before {
+  background-color: $lipstick-03;
+}
+
+.main-header--opened .main-header__toggle:active::after {
+  background-color: $lipstick-03;
 }
 
 .main-header__wrapper {
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
-  padding-left: 20px;
   align-items: center;
   min-height: 66px;
   box-shadow: 0 1px 0 0 $black, inset 0 1px 0 0 $white-15;
-  padding-right: 20px;
   background-color: $dark-two;
 }
 
@@ -157,6 +185,7 @@
     position: absolute;
     z-index: 1;
     width: 1200px;
+
   }
 
   .main-header--closed {

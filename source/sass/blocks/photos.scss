@@ -13,7 +13,7 @@
   box-sizing: border-box;
   width: 170px;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 25px;
 }
 
 .photos__image {
@@ -21,7 +21,7 @@
   background-color: $black;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 237px;
+  height: 166px;
 }
 
 .photos__text {
@@ -31,8 +31,8 @@
   color: $dark-two;
   margin: 0 auto;
   text-align: center;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 16px;
   width: 250px;
 }
 

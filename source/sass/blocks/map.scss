@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-color: $white-two;
   background-size: cover;
-  background-position: top -483px right 0;
+  background-position: top -440px right 0;
   height: 300px;
   position: relative;
 }
@@ -19,6 +19,23 @@
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 1;
+}
+
+.map::after {
+  background-image: url(../img/icon-map-marker.svg);
+  background-position: -2px center;
+  content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    top: 110px;
+    left: 140px;
+    width: 37px;
+    height: 36px;
+    z-index: 1;
 }
 
 @media (min-width: $tablet-width) {

@@ -11,9 +11,13 @@
     padding-right: 0;
   }
 }
+.container__wrapper {
+  background-color: $dark-two;
+}
 
 @media (min-width: $desktop-width) {
   .container {
+    display: flex;
     padding-left: 130px;
     padding-right: 130px;
   }

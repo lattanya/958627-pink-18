@@ -69,14 +69,14 @@
   .features__list {
     width: 320px;
     text-align: left;
-    padding-top: 0px;
+    padding-top: 0;
     margin-left: 48px;
     margin-right: 0;
     margin-top: 85px;
   }
 
   .features__item {
-    padding-top: 0px;
+    padding-top: 0;
     margin-bottom: 43px;
   }
 
@@ -137,7 +137,7 @@
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 25px;
 
     &--width {

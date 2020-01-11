@@ -94,7 +94,7 @@
   }
 
   .contacts__text {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -132,11 +132,11 @@
     padding-top: 63px;
     padding-bottom: 47px;
     margin: 0 auto;
-}
+  }
 
-.contacts__text {
-  margin-bottom: 20px;
-}
+  .contacts__text {
+    margin-bottom: 20px;
+  }
 
   .contacts__phone {
     width: 300px;

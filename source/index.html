@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Pink</title>
     <!-- Pixel Glass -->
-<!-- <style>
+<style>
   HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -482,14 +482,15 @@
 window.onload = function () {
   pixelGlass();
 };
-</script> -->
+</script>
 <!-- // Pixel Glass -->
   </head>
   <body class="index-page">
       <div style="display:none">
           <include src="build/img/sprite.svg"></include>
-        </div>
-        <header class="main-header main-header--open main-header--nojs">
+      </div>
+      <header class="main-header main-header--opened main-header--nojs">
+        <div class="container container__wrapper">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="index.html">
             <svg class="main-header__logo main-header__logo--mobile" fill="#FFFFFF" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -539,7 +540,9 @@ window.onload = function () {
               </g>
             </svg>
         </a>
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -549,6 +552,7 @@ window.onload = function () {
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">О приложении</h1>
