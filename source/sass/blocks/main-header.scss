@@ -1,5 +1,6 @@
 .main-header {
   width: 100%;
+  background-color: $dark-two;
 
   &--opend {
     position: static;
@@ -165,12 +166,13 @@
 
 @media (min-width: $desktop-width) {
   .main-header__wrapper {
-    width: 320px;
+    width: auto;
     box-shadow: none;
     background-color: transparent;
-    padding-left: 124px;
+    padding-left: 0;
     padding-right: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    min-height: auto;
   }
 
   .main-header {
@@ -181,11 +183,12 @@
     align-items: center;
     // padding-left: 130px;
     // padding-right: 130px;
-    background-color: transparent;
+    background-color: $dark-two-03;
     position: absolute;
     z-index: 1;
-    width: 1200px;
-
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .main-header--closed {
