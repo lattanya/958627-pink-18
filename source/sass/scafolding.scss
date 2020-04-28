@@ -39,7 +39,7 @@ body {
   min-width: $mobile-width;
   font-size: 14px;
   line-height: 14px;
-  color: $black;
+  color: $dark-two;
   background-color: $white;
 }
 
@@ -53,10 +53,37 @@ body {
   overflow: hidden;
 }
 
+.button {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 700;
+    font-family: inherit;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    background-color: $jade-green;
+
+    &:hover,
+    &:focus {
+      background-color: $jade-green-hover;
+    }
+
+    &:active {
+      color: $white-15;
+      background-color: $jade-green-hover;
+    }
+}
+
 @media (min-width: $tablet-width) {
   body {
     min-width: $tablet-width;
   }
+
 }
 
 @media (min-width: $desktop-width) {

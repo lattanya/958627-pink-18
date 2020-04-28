@@ -27,8 +27,8 @@
 }
 
 .main-nav__item {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 15px;
   border-top: 1px solid $white-15;
   border-bottom: 1px solid $black;
   // box-shadow: 1px 1px 1px 1px black, inset 1px 1px 1px 1px rgba(255, 255, 255, 0.15);
@@ -37,9 +37,9 @@
   background-color: $dark-two;
 }
 
-@media (max-width: $tablet-width) {
-  .main-header--closed .main-nav__item {
-    display: none;
+@media (min-width: $tablet-width){
+  .main-nav__item {
+    padding-top: 15px;
   }
 }
 
@@ -47,6 +47,7 @@
   .main-nav {
     margin-left: 170px;
     width: 100%;
+    padding-top: 9px;
   }
   .main-nav__list {
     flex-direction: row;

@@ -8,7 +8,7 @@
 .contacts__header {
   font-size: 24px;
   line-height: normal;
-  font-weight: normal;
+  font-weight: lighter;
   color: $dark-two;
   width: 230px;
   padding-top: 40px;
@@ -57,7 +57,7 @@
 .contacts__info {
   font-size: 24px;
   line-height: normal;
-  font-weight: normal;
+  font-weight: 400;
   color: $lipstick;
   margin-top: 0;
   margin-bottom: 18px;
@@ -121,7 +121,8 @@
     flex-direction: row;
     width: 940px;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .contacts__header {
@@ -135,7 +136,19 @@
   }
 
   .contacts__text {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    font-weight: 700;
+  }
+
+  .contacts__info {
+    font-weight: 300;
+    margin-bottom: 4px;
+
+    &--adress {
+      line-height: 30px;
+      padding-right: 25px;
+    }
   }
 
   .contacts__phone {

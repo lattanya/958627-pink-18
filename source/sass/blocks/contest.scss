@@ -27,13 +27,13 @@
 @media (min-width: $tablet-width) {
   .contest__text {
     font-size: 50px;
-    line-height: 1;
+    line-height: 1.2;
     width: 475px;
-    padding-top: 80px;
+    padding-top: 73px;
   }
 
   .contest__image {
-    min-height: 330px;
+    min-height: 331px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 }
@@ -41,13 +41,13 @@
 @media (min-width: $desktop-width) {
   .contest__text {
     font-size: 50px;
-    line-height: 1;
+    line-height: 1.2;
     width: 747px;
-    padding-top: 75px;
+    padding-top: 175px;
   }
 
   .contest__image {
-    min-height: 285px;
+    min-height: 392px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
