@@ -1,6 +1,6 @@
 .prices {
   min-height: 475px;
-  background-image: url("../img/mask.png");
+  background-image: url("../img/mask2.png");
   background-color: white;
   background-position: center -42px;
   background-repeat: no-repeat;
@@ -13,6 +13,8 @@
   overflow: hidden;
   position: relative;
   min-height: 319px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .prices__table {
@@ -97,25 +99,24 @@
 
 @media (min-width: $tablet-width) {
   .prices {
-    padding-top: 153px;
-    padding-bottom: 0px;
-    min-height: 443px;
-    background-position: center -24px;
+    padding-top: 102px;
+    padding-bottom: 0;
+    min-height: 391px;
+    background-image: url("../img/mask_tablet_2.png");
+    background-position: center -9px;
   }
 
   .prices__table {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    transform: translateX(-1px);
-    transform: translateY(-1px);
+    transform: none;
+    position: static;
+    border-spacing: 0px;
   }
 
   .prices__wrapper {
     min-height: 220px;
-    padding-left: 0;
-    padding-right: 0;
     overflow: hidden;
+    margin: 0;
   }
 
   .prices__head-cell {
@@ -123,21 +124,22 @@
   }
 
   .prices__name {
-    padding-top: 10px;
+    padding-top: 14px;
     padding-bottom: 0;
+    font-size: 16px;
   }
 
   .prices__value {
     font-size: 18px;
     line-height: 26px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   .prices__inner-cell {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
     width: 154px;
   }
@@ -148,8 +150,8 @@
     text-align: left;
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-left: 12px;
-    padding-right: 0px;
+    padding-left: 16px;
+    padding-right: 0;
     width: 154px;
   }
 
@@ -158,9 +160,9 @@
   }
 
   .prices__pic {
-    position: static;
-    top: 20px;
-    right: 20px;
+    position: relative;
+    top: 5px;
+    right: 0;
   }
 
   .prices__head-cell--hit::before {
@@ -173,17 +175,17 @@
     left: -4px;
   }
 
-  .feedback__button-list {
+  .prices__button-list {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .prices {
-    padding-top: 186px;
-    padding-left: 119px;
+    padding-top: 195px;
     padding-bottom: 87px;
-    background-position: center -122px;
+    background-image: url("../img/mask_desktop_2.png");
+    background-position: center 33px;
   }
 
   .prices__wrapper {
@@ -204,12 +206,16 @@
 
   .prices__table {
     width: 940px;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .prices__servise {
     display: none;
+  }
+
+  .prices__pic {
+    position: relative;
+    top: 5px;
+    right: 0;
   }
 
   .prices__side-cell {

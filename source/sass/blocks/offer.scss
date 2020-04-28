@@ -13,12 +13,13 @@
   width: 204px;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 36px;
+  padding-top: 41px;
   padding-bottom: 0;
   text-align: center;
 
   &--next {
     padding-bottom: 33px;
+    padding-top: 31px;
   }
 }
 
@@ -27,13 +28,14 @@
     width: 587px;
     font-size: 40px;
     line-height: 58px;
-    padding: 47px 0 0 0;
+    padding: 44px 0 0 0;
 
     &--next {
       width: 410px;
       font-size: 40px;
-      line-height: 1;
-      padding: 0 0 48px 0;
+      line-height: 40px;
+      padding-top: 1px;
+      padding-bottom: 48px;
     }
   }
 }

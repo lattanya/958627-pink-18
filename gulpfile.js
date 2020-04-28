@@ -85,7 +85,10 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    browser: "opera",
+    port: 8080
+
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));

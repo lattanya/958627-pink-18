@@ -4,7 +4,7 @@
   background-color: $dark-two;
   background-size: contain;
   background-position: center;
-  padding-top: 102px;
+  padding-top: 107px;
   position: relative;
 }
 
@@ -12,7 +12,7 @@
 .download__title {
   font-size: 24px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.2;
   color: $white;
   display: flex;
   box-sizing: border-box;
@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  left: -5%;
+  left: -7%;
   top: 12%;
   bottom: 0;
 }
@@ -55,12 +55,12 @@
   color: $white;
   font-weight: bold;
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 17px;
   width: 281px;
   text-align: center;
   border: 3px $white solid;
   border-radius: 30px;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
   display: block;
 }
 
@@ -85,6 +85,8 @@
   box-sizing: border-box;
   justify-content: center;
   text-align: center;
+  margin-top: 18px;
+  margin-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,8 +97,8 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 92px;
-    min-height: 614px;
+    padding-top: 94px;
+    min-height: 621px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -112,14 +114,14 @@
     background: none;
     align-items: center;
     width: 45%;
-    margin-left: 11px;
+    margin-left: 10px;
     margin-right: 0;
     padding: 0;
   }
 
   .download__button {
     width: 300px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .download__list {
@@ -127,7 +129,7 @@
   }
 
   .download__text {
-    margin-top: 0;
+    margin-top: 3px;
     margin-bottom: 30px;
     width: 300px;
     font-size: 18px;
@@ -138,60 +140,59 @@
     order: 2;
     position: absolute;
     left: -3%;
-    top: 12%;
+    top: 13%;
     bottom: 0;
   }
 
   .download__title {
     font-size: 40px;
-    line-height: 46px;
+    line-height: 48px;
     width: 195px;
     position: static;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 100px;
+    background-position: center 0;
     background-size: cover;
-    height: 853px;
+    min-height: 853px;
     padding-top: 102px;
   }
 
   .download__title {
     font-size: 50px;
-    line-height: 1.15;
-    width: 231px;
-    margin-bottom: 58px;
-    padding-top: 118px;
+    line-height: 1.17;
+    width: 240px;
+    margin-bottom: 56px;
+    padding-top: 116px;
   }
 
   .download__image {
     order: 2;
     position: absolute;
-    right: 0;
+    right: 5px;
     bottom: -106px;
     left: auto;
   }
 
   .download__wrapper {
-    width: 31%;
+    width: 32%;
     padding-top: 3px;
     margin-left: 0;
   }
 
   .download__button {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
     font-size: 21px;
   }
 
   .download__text {
-    margin-top: 23px;
+    margin-top: 22px;
     width: 300px;
     font-size: 18px;
-
   }
 }
