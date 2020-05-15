@@ -1,26 +1,38 @@
-
 .personal-data {
-  padding-bottom: 16px;
+  padding-bottom: 25px;
+}
+
+.personal-data__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .personal-data__item {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  padding-bottom: 26px;
+  padding-bottom: 18px;
 }
 
 .personal-data__label {
+  @include form-style__header();
+
   color: $lipstick;
-  margin-bottom: 22px;
-  margin-left: 30px;
+  margin-bottom: 6px;
+  margin-left: 22px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
 }
 
 .personal-data__field {
-  padding: 22px;
+  @include form-style__value();
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  padding-left: 20px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $white-two;
@@ -28,6 +40,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .personal-data {
+    padding-bottom: 16px;
+  }
+  
   .personal-data__item {
     flex-direction: row;
     align-items: center;
@@ -37,7 +53,7 @@
   .personal-data__label {
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 30px;
+    margin-right: 16px;
   }
 
   .personal-data__field {
@@ -48,6 +64,10 @@
 @media (min-width: $desktop-width) {
   .personal-data {
     padding-bottom: 0;
+  }
+
+  .personal-data__list {
+    padding-left: 0;
   }
 
   .personal-data__label {
@@ -62,4 +82,8 @@
   .personal-data__item {
     padding-bottom: 52px;
   }
+  
+  .personal-data__item:last-child {
+      padding-bottom: 0;
+    }
 }

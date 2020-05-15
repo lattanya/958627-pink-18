@@ -86,7 +86,6 @@ gulp.task("server", function () {
     open: true,
     cors: true,
     ui: false,
-    browser: "opera",
     port: 8080
 
   });

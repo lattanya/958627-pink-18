@@ -1,8 +1,18 @@
-.app {
+.radio {
   border: 2px solid $white-two;
+  background-color: $white-two;
+  order: 3;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0;
 }
 
-.app__header {
+.radio__header {
+@include form-style__header();
+
   width: 230px;
   margin: 0 auto;
   text-align: center;
@@ -10,44 +20,58 @@
   padding-bottom: 38px;
 }
 
-.app__item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.radio__item {
+  padding-top: 0;
+  padding-bottom: 46px;
 }
 
-.add__list {
+.radio__list {
   padding-left: 20px;
+  list-style: none;
+  margin-top: 2px;
+  margin-bottom: 0;
 }
 
-.app__label {
+.radio__label {
+@include form-style__value();
+
   position: relative;
   cursor: pointer;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 69px;
 }
 
-.app__item input + label::before {
+.radio__item input + label::before {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $white;
-  border: 2px solid $white-two;
+  border: 2px solid $gray-light;
   border-radius: 50%;
-  top: -4px;
-  left: 0;
+  top: -5px;
+  left: 1px;
   width: 37px;
   height: 36px;
   cursor: pointer;
 }
 
-.app__item input:checked + label::before {
+.radio__item input:checked + label::before {
   background-image: url("../img/icon-map-marker.svg");
   background-position: -2px center;
 }
 
 @media (min-width: $tablet-width) {
-  .app__header {
+  .radio {
+    border: 1px solid $white-two;
+    background-color: $white;
+    order: 1;
+  }
+
+.form-page__radio {
+
+}
+
+  .radio__header {
     width: 380px;
     background-color: $white;
     padding-right: 25px;
@@ -62,7 +86,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .app__header {
+  .radio {
+    width: 46%;
+    border: none;
+  }
+
+  .radio__header {
     padding-right: 25px;
     padding-left: 25px;
     padding-bottom: 10px;

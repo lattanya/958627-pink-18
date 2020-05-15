@@ -1,4 +1,6 @@
 .contact-data__legend {
+@include form-style__header();
+
   display: none;
 }
 
@@ -6,7 +8,8 @@
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  padding-left: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-data__item {
@@ -16,10 +19,12 @@
 }
 
 .contact-data__label {
+  @include form-style__header();
+
   color: $lipstick;
   text-transform: uppercase;
-  padding-bottom: 16px;
-  padding-left: 24px;
+  padding-bottom: 10px;
+  padding-left: 22px;
 }
 
 .contact-data__wrapper {
@@ -29,7 +34,12 @@
 }
 
 .contact-data__field {
-  padding: 22px;
+  @include form-style__value();
+
+  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 0;
   width: 100%;
   border: 2px solid $white-two;
 }
@@ -82,6 +92,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contact-data {
+    margin-top: 26px;
+  }
+  .contact-data__legend {
+    padding: 0;
+  }
   .contact-data__list {
     width: 820px;
     flex-direction: row;
@@ -96,14 +112,14 @@
   }
 
   .contact-data__field {
-    padding: 22px;
+    padding: 14px;
     width: 313px;
     order: -1;
   }
 
   .contact-data__label {
     width: 375px;
-    padding-top: 20px;
-    padding-left: 22px;
+    padding-top: 15px;
+    padding-left: 17px;
   }
 }

@@ -3,8 +3,8 @@
   background-color: $black;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 15px;
-  padding-bottom: 85px;
+  padding-top: 28px;
+  padding-bottom: 83px;
 }
 
 .photos-head__header {
@@ -22,14 +22,14 @@
 @media (min-width: $tablet-width) {
   .photos-head {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    padding-top: 180px;
-    padding-bottom: 145px;
+    padding-top: 71px;
+    padding-bottom: 142px;
   }
 
 .photos-head__header {
 font-size: 50px;
-line-height: 1;
-width: 348px;
+line-height: 1.2  ;
+width: 356px;
 }
 }
 @media (min-width: $desktop-width) {

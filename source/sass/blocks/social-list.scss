@@ -18,8 +18,9 @@
 
 .social-list__link {
   position: absolute;
-  left: 15px;
-  top: 15px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 
 .social-list__item:hover .social-list__logo--fill {

@@ -6,18 +6,21 @@
 
 .form-page__text {
   width: 280px;
-  margin: 53px auto;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   order: -1;
-}
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-two;
 
-.form-page__list {
-  list-style: none;
-  margin: 0;
-}
-
-.form-page__item {
-  padding-bottom: 60px;
+  span {
+    display: none;
+  }
 }
 
 .form-page__personal-data {
@@ -28,7 +31,7 @@
 }
 
 .form-page__contact-data {
-  padding-top: 35px;
+  padding-top: 38px;
   padding-bottom: 18px;
   padding-left: 0;
   padding-right: 0;
@@ -41,12 +44,9 @@
   background-color: $white-two;
   border: none;
   order: 1;
-}
-
-.form-page__fieldset-checkbox {
-  border: none;
-  padding: 0;
-  margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 38px;
 }
 
 .form-page__radio {
@@ -77,17 +77,21 @@
 }
 
 .form-page__button {
+  @include form-style__button();
+
+  font-weight: bold;
   background-color: $jade-green;
   border: none;
   width: 280px;
-  padding: 24px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   margin: 0 auto;
 }
 
 .form-page__comment {
   text-transform: uppercase;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 42px;
   margin-bottom: 40px;
 
   &--desktop {
@@ -103,8 +107,13 @@
   .form-page__text {
     width: 490px;
     margin-top: 93px;
-    margin-bottom: 80px;
-  }
+    margin-bottom: 73px;
+    font-size: 18px;
+
+    span {
+      display: block;
+   }
+ }
 
   .form-page__radio {
     border: 1px solid $white-two;
@@ -115,12 +124,9 @@
   .form-page__checkbox {
     background-color: $white;
     order: 3;
-  }
-
-  .form-page__fieldset-checkbox {
-    border: 2px solid $white-two;
-    background-color: $white;
-    order: 3;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
 
   .form-page__contact-data {
@@ -161,15 +167,15 @@
     justify-content: space-between;
   }
 
-  .form-page__list{
-    padding-left: 0;
-  }
-
   .form-page__text {
     width: 820px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 84px;
+    margin-bottom: 87px;
+
+    span {
+      display: inline-block;
+   }
   }
 
   .form-page__radio {
@@ -181,9 +187,16 @@
     width: 46%;
   }
 
+  .form-page__checkbox {
+    padding-top: 0;
+    margin-top: 56px;
+  }
+
   .form-page__contact-data {
-    margin-bottom: 12px;
+    margin-bottom: 0;
     width: 100%;
+    padding-top: 37px;
+    padding-bottom: 0;
   }
 
   .form-page__feedback {

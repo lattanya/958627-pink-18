@@ -1,21 +1,27 @@
-
 .emotions__field {
+  @include form-style__value();
+
   display: block;
   min-height: 200px;
   width: 280px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid $white-two;
   resize: none;
+  padding-top: 14px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .emotions__legend {
+  @include form-style__header();
+
   width: 222px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 14px;
   margin: 0 auto;
   text-align: center;
 }
