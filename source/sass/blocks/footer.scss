@@ -21,8 +21,6 @@
 
 .footer__logo {
   margin: 0 auto;
-  padding-top: 23px;
-  padding-bottom: 38px;
   cursor: pointer;
 
   &--desktop {
@@ -103,8 +101,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer__wrapper {
-    margin-top: 70px;
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   .footer__logo-wrapper {
