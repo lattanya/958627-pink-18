@@ -43,6 +43,11 @@ body {
   background-color: $white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);

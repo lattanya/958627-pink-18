@@ -6,6 +6,7 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 180px;
+  margin-top: 35px;
 }
 
 .social-list__item {
@@ -18,8 +19,9 @@
 
 .social-list__link {
   position: absolute;
-  left: 15px;
-  top: 15px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 
 .social-list__item:hover .social-list__logo--fill {
@@ -33,5 +35,6 @@
 @media (min-width: $tablet-width) {
   .social-list {
     width: 185px;
+    margin-top: 16px;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .editor__form {
-    margin-top: 30px;
+    margin-top: 41px;
 }
 .editor__tools-list {
     list-style: none;
@@ -16,7 +16,7 @@
     align-items: center;
     padding-left: 36px;
     padding-right: 44px;
-    margin-bottom: 39px;
+    margin-bottom: 33px;
 }
 
 .editor__bar {
@@ -70,12 +70,12 @@
 
     &:hover .editor__tools-image-path,
     &:focus .editor__tools-image-path {
-        fill: $gray-dark;
+      fill: $gray-dark;
     }
 
     &:active .editor__tools-image-path, 
     &--active .editor__tools-image-path {
-        fill: $lipstick;
+       fill: $lipstick;
     }
 }
 
@@ -117,7 +117,7 @@
     }
 
     &--cancel {
-        color: $gray-light;
+        color: $white-two;
         border-color: $gray-light;
 
         &:hover,
@@ -248,6 +248,7 @@
         padding-top: 0;
         padding-bottom: 0;
         background-color: transparent;
+        margin-bottom: 86px;
     }
 
     .editor__wrapper {
