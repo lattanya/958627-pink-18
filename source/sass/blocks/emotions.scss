@@ -30,26 +30,35 @@
   .emotions__field {
     width: 497px;
     text-align: left;
-    padding-top: 23px;
-    padding-left: 23px;
+    padding-top: 14px;
+    padding-left: 16px;
     font-family: inherit;
     font-size: 18px;
     line-height: 30px;
     color: $dark-two;
+    margin-top: 37px;
+    min-height: 193px;
+  }
+
+  .emotions__legend {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .emotions__field {
     width: 820px;
-    padding-top: 23px;
-    padding-left: 23px;
+    min-height: 126px;
+    padding-top: 13px;
+    padding-left: 18px;
+    margin-bottom: 42px;
   }
 
   .emotions__legend {
     width: 260px;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
     text-align: center;
   }
 }

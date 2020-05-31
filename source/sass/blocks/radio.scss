@@ -67,10 +67,6 @@
     order: 1;
   }
 
-.form-page__radio {
-
-}
-
   .radio__header {
     width: 380px;
     background-color: $white;
@@ -80,8 +76,18 @@
     padding-bottom: 0;
     position: relative;
     top: -15px;
-    left: 190px;
+    left: 137px;
     display: inline-block;
+  }
+
+  .radio__list {
+    padding-left: 77px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+  }
+
+  .radio__label {
+    padding-left: 60px;
   }
 }
 
@@ -100,7 +106,16 @@
     width: 370px;
     position: relative;
     top: -15px;
-    left: 54px;
+    left: 50px;
     display: inline-block;
+  }
+
+  .radio__list {
+    padding-left: 93px;
+    padding-top: 23px;
+  }
+
+  .radio__item {
+    padding-bottom: 45px;
   }
 }

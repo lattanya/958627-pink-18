@@ -60,7 +60,7 @@ text-align: center;
 
 @media (min-width: $tablet-width) {
   .checkbox {
-    padding-bottom: 30px;
+    padding-bottom: 0;
     border: 2px solid $white-two;
     background-color: $white;
     order: 3;
@@ -68,18 +68,22 @@ text-align: center;
 
   .checkbox-legend {
     width: 435px;
-    padding-top: 60px;
-    padding-bottom: 45px;
   }
 
   .checkbox__list {
-    padding-left: 62px;
+    padding-left: 59px;
+    margin-top: 30px;
+    margin-bottom: 22px;
+  }
+
+  .checkbox__label {
+    padding-left: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox {
-    padding-bottom: 41px;
+    padding-bottom: 27px;
     padding-top: 29px;
   }
 
@@ -98,12 +102,20 @@ text-align: center;
     justify-content: space-between;
     padding-left: 59px;
     flex-direction: column;
-    height: 180px;
+    height: 164px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   .checkbox__item {
-    width: 286px;
+    width: 293px;
+  }
+
+  .checkbox__item:nth-child(3) {
+    margin-left: 21px;
+  }
+
+  .checkbox__item:nth-child(4) {
+    margin-left: 21px;
   }
 }
